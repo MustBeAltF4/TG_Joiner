@@ -29,22 +29,20 @@ This script allows you to join multiple Telegram chats using multiple Telegram a
 
    Example `accounts.txt`:
    ```
-   user1
-   user2
-   user3
+   +1234567890:12345:abcdef12345
+   +9876543210:54321:uvwxyz54321
    ```
 
    Example `chats.txt`:
    ```
-   chat1
-   chat2
-   chat3
+   https://t.me/joinchat/ABCDEF1234567890
+   @my_chat_username
    ```
 
 6. Run the script by executing the following command:
 
    ```
-   python join_chats.py
+   python main.py
    ```
 
    The script will iterate over each Telegram account in `accounts.txt` and join the chats specified in `chats.txt`. A success or failure message will be displayed for each attempt.
